@@ -37,8 +37,8 @@ nav {
 }
 
 .brand img {
-  width: 130px;
-  max-height: 48px;
+  width: 300px;
+  max-height: 130px;
   height: auto;
   display: block;
   object-fit: contain;
