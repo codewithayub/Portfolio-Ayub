@@ -24,7 +24,23 @@
 <section id="home" class="hero">
 <div class="hero-text">
 <h1>Hello, I'm <span>Ayub</span></h1>
-<h3>Web Developer</h3>
+<h3 class="typing">Web Developer</h3>
+  <h3 id="typing"></h3>
+
+<script>
+const text = "Web Developer";
+let i = 0;
+
+function typeWriter() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 100);
+  }
+}
+
+typeWriter();
+</script>
 <p>I build modern and responsive websites.</p>
 <a href="#contact" class="btn">Hire Me</a>
 </div>
